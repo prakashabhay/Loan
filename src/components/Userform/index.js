@@ -13,7 +13,7 @@ return(
 
                 <div className="form-group row">
                     <label htmlFor="loan-icno" className="col-4 col-md-2 col-form-label">Name</label>
-                    <div className="col-6 col-md-4">
+                    <div className="col-6 col-md-4 m10">
                         <input 
                             type="text" 
                             className={`form-control is-`}
@@ -34,7 +34,7 @@ return(
 
                 <div className="form-group row">
                     <label htmlFor="loan-name" className="col-4 col-md-2 col-form-label">Monthly Fee</label>
-                    <div className="col-6 col-md-4">
+                    <div className="col-6 col-md-4 m10">
                         <input 
                             type="text" 
                             className={`form-control is-`}
@@ -54,10 +54,10 @@ return(
                     </div>
                 </div>
                 <div className="row">
-                <div className="col-10">
+                <div className="col-md-10 col-sm-6">
                     <h5 className="error">{error}</h5>
                 </div>
-                <div className="col-2 text-center">
+                <div className="col-md-2 col-sm-2 text-center">
                     <button className="btn btn-success w-100" onClick={updateLoanData}>Save</button>
                 </div>
             </div>

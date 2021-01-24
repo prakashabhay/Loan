@@ -11,7 +11,8 @@ function App() {
     name:"",
     amount:"",
     fee:"",
-    apr:""
+    apr:"",
+    id:0
   }
   const [inputs,setInputs] = useState(initialValues)//useState(initialValues);
   const [loanData,setLoanData] = useLocalStorage('loanInfo', []);
@@ -44,7 +45,8 @@ function App() {
     return true;
   };
   const setDataTolocal = (state)=>{
-    const data = [...state,inputs]
+    
+    const data = [...state,{...inputs,id:(state.length+1)}]
     return data;
   }
   const updateLoanData = (e)=>{

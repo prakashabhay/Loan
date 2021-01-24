@@ -24,7 +24,7 @@ function LoanDetails({ loanData }) {
       }];
     return (
         <div className="container-fluid">
-            <BootstrapTable keyField='name' bordered={false} striped ={true} data={ loanData } columns={ columns } classes="custom-row-class"/>
+            <BootstrapTable keyField='id' bordered={false} striped ={true} data={ loanData } columns={ columns } classes="custom-row-class"/>
         </div>
       );
 }
