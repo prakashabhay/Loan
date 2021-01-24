@@ -20,11 +20,11 @@ function LoanDetails({ loanData }) {
       },{
         dataField: 'apr',
         text: 'APR',
-        footer: (columnData =>columnData.reduce((acc, item) => parseInt(acc) + parseInt(item), 0)+'%')
+        footer: (columnData =>columnData.reduce((acc, item) => parseInt(acc) + parseFloat(item), 0)+'%')
       }];
     return (
         <div className="container-fluid">
-            <BootstrapTable keyField='name' bordered="false" striped ="true" data={ loanData } columns={ columns } classes="custom-row-class"/>
+            <BootstrapTable keyField='name' bordered={false} striped ={true} data={ loanData } columns={ columns } classes="custom-row-class"/>
         </div>
       );
 }

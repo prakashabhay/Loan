@@ -1,9 +1,4 @@
-.page-loan__header h1 {
-  font-weight: 600;
-}
-.page-loan__header p {
-  font-style: italic;
-}
+
 .page-loan__content {
   width: 90%;
   margin: 0 auto;
@@ -19,4 +14,6 @@
   margin-bottom: 0;
   padding: 1rem;
 }
-
+.error{
+  color: red;
+}

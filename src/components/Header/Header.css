@@ -1,0 +1,11 @@
+.page-loan__header {
+    background: #58b0c3;
+    height: 55px;
+}
+.page-loan__header h1 {
+  font-weight: 600;
+  color: #fff;
+}
+  .page-loan__header p {
+    font-style: italic;
+  }
