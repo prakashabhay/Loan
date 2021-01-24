@@ -20,7 +20,7 @@ function LoanDetails({ loanData }) {
       },{
         dataField: 'apr',
         text: 'APR',
-        footer: (columnData =>columnData.reduce((acc, item) => parseInt(acc) + parseFloat(item), 0)+'%')
+        footer: (columnData =>columnData.reduce((acc, item) => parseInt(acc) + parseFloat(item), 0)/loanData.length+'%')
       }];
     return (
         <div className="container-fluid">
