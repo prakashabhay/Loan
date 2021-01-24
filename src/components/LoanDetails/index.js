@@ -1,5 +1,5 @@
 import React from "react";
-//import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+
 import BootstrapTable from 'react-bootstrap-table-next';
 
 function LoanDetails({ loanData }) {

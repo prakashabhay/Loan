@@ -8,10 +8,6 @@ return(
         <div className="jumbotron jumbotron-fluid text-dark bg-light animated fadeIn">
             <div className="page-loan__content">
                 <div className="form-group row">
-                    <h4>User Input</h4>
-                </div>
-
-                <div className="form-group row">
                     <label htmlFor="loan-icno" className="col-4 col-md-2 col-form-label">Name</label>
                     <div className="col-6 col-md-4 m10">
                         <input 

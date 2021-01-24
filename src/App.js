@@ -14,7 +14,7 @@ function App() {
     apr:"",
     id:0
   }
-  const [inputs,setInputs] = useState(initialValues)//useState(initialValues);
+  const [inputs,setInputs] = useState(initialValues);
   const [loanData,setLoanData] = useLocalStorage('loanInfo', []);
   const [error, setError] = useState('');
 
@@ -28,7 +28,7 @@ function App() {
     let actualError = '';
     // Validate if there are values
     if (!amount || !name || !apr || !fee) {
-      actualError = 'All the values are required';
+      actualError = 'All the input fields are required';
     }
     // Validade if the values are numbers
     else if (isNaN(amount) || isNaN(fee) || isNaN(apr)) {
