@@ -4,6 +4,11 @@ import BootstrapTable from 'react-bootstrap-table-next';
 
 function LoanDetails({ loanData }) {
 
+  const getTotalApr = (columnData)=>{     
+    let totalValue = columnData.length>0 &&columnData.reduce((acc, item) => parseInt(acc) + parseFloat(item), 0)     
+    return loanData.length>0 ?(totalValue/loanData.length).toFixed(2):0   
+  }
+
       const columns = [{
         dataField: 'name',
         text: 'Creditor Name',
@@ -20,7 +25,7 @@ function LoanDetails({ loanData }) {
       },{
         dataField: 'apr',
         text: 'APR',
-        footer: (columnData =>(columnData.reduce((acc, item) => parseInt(acc) + parseFloat(item), 0)/loanData.length).toFixed(2)+'%')
+        footer: columnData =>getTotalApr(columnData)+"%"
       }];
     return (
         <div className="container-fluid">
